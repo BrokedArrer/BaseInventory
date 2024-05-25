@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://n3e4prthg1iu"]
+
+[ext_resource type="Script" path="res://Objects/InteractableScripts/Chest.gd" id="1_yvsfx"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qyfd3"]
+load_path = "res://.godot/imported/treasure chests.png-d7ca50b8193d84bebaa3719529527489.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7tg4d"]
+atlas = SubResource("CompressedTexture2D_qyfd3")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i7ctg"]
+size = Vector2(14, 9)
+
+[node name="Chest" type="StaticBody2D" groups=["external_inventory"]]
+collision_layer = 5
+collision_mask = 0
+script = ExtResource("1_yvsfx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.8, 0.8)
+texture = SubResource("AtlasTexture_7tg4d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_i7ctg")

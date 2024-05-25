@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://4opxibybt3ui"]
+
+[ext_resource type="Script" path="res://Inventory/Inventory.gd" id="1_aals8"]
+[ext_resource type="Texture2D" uid="uid://cb6jcnauc0u7j" path="res://Art/UI Art/InvUISprites/InvBG.png" id="2_r5qrm"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pbics"]
+atlas = ExtResource("2_r5qrm")
+
+[node name="Inventory" type="PanelContainer"]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 1
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 217.0
+offset_bottom = 171.0
+scale = Vector2(0.8, 0.8)
+script = ExtResource("1_aals8")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 2
+texture = SubResource("AtlasTexture_pbics")
+patch_margin_left = 16
+patch_margin_top = 8
+patch_margin_right = 16
+patch_margin_bottom = 8
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "Chest"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="ItemGrid" type="GridContainer" parent="MarginContainer"]
+layout_mode = 2
+columns = 3

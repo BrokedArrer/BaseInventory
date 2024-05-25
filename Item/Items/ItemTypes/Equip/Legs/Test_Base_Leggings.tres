@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="EquipDataLegs" load_steps=5 format=3 uid="uid://d2jug7nhl146m"]
+
+[ext_resource type="Script" path="res://Item/Items/ItemTypes/Equip/Legs/Equip_Data_Legs.gd" id="1_ul5xq"]
+[ext_resource type="Script" path="res://Item/Item_Data.gd" id="1_uv200"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g2vts"]
+load_path = "res://.godot/imported/Weapons and Equipment.png-4ebfac030092bb7b6000dbfc7f6ee8bd.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mcb0y"]
+atlas = SubResource("CompressedTexture2D_g2vts")
+region = Rect2(240, 1936, 16, 16)
+
+[resource]
+script = ExtResource("1_ul5xq")
+name = "Leather Leggings"
+description = "Some leggings made of leather.*TEST ITEM*"
+stackable = false
+texture = SubResource("AtlasTexture_mcb0y")
+type = "Test"
+rarity = "Test"
+recipe = Array[ExtResource("1_uv200")]([])

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="ItemDataConsumable" load_steps=4 format=3 uid="uid://c5kiysgd6dcty"]
+
+[ext_resource type="Script" path="res://Item/Items/ItemTypes/Consumables/Item_Data_Consumable.gd" id="1_4c0bq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g3in1"]
+load_path = "res://.godot/imported/Alchemy and Potions.png-1532de00b001ff145b54581703cd13dd.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1shab"]
+atlas = SubResource("CompressedTexture2D_g3in1")
+region = Rect2(128, 144, 16, 16)
+
+[resource]
+script = ExtResource("1_4c0bq")
+heal_value = 1
+name = "Small Health Potion"
+description = "Heals a small amount of health"
+stackable = true
+texture = SubResource("AtlasTexture_1shab")
+type = "Test"
+rarity = "Test"
+gold_value = 0
+silver_value = 0
+copper_value = 0

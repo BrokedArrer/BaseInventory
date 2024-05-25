@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cgs7dg6ay1iif"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g3in1"]
+load_path = "res://.godot/imported/Alchemy and Potions.png-1532de00b001ff145b54581703cd13dd.ctex"
+
+[resource]
+atlas = SubResource("CompressedTexture2D_g3in1")
+region = Rect2(128, 144, 16, 16)

@@ -1,0 +1,77 @@
+[gd_scene load_steps=8 format=3 uid="uid://dbs1uxhxnebv8"]
+
+[ext_resource type="Theme" uid="uid://d20a5atje1klx" path="res://Scenes/FontTheme.tres" id="1_36vus"]
+[ext_resource type="Script" path="res://Inventory/Inventory_Interface.gd" id="2_wfl23"]
+[ext_resource type="PackedScene" uid="uid://bwe48eo60ijh8" path="res://Inventory/Inventory.tscn" id="3_eeax8"]
+[ext_resource type="PackedScene" uid="uid://xgl7ahpfy33l" path="res://Inventory/Slot.tscn" id="4_jx3xw"]
+[ext_resource type="PackedScene" uid="uid://bd3cprxbqi86q" path="res://Inventory/EquipInventory.tscn" id="5_nq2fr"]
+[ext_resource type="PackedScene" uid="uid://4opxibybt3ui" path="res://Inventory/ExternalInventory.tscn" id="6_015ts"]
+[ext_resource type="PackedScene" uid="uid://bps64iuxhpw05" path="res://Inventory/HotBarInventory.tscn" id="7_akc5h"]
+
+[node name="InventoryUI" type="CanvasLayer"]
+
+[node name="InventoryInterface" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_36vus")
+script = ExtResource("2_wfl23")
+
+[node name="PlayerInventory" parent="InventoryInterface" instance=ExtResource("3_eeax8")]
+layout_mode = 1
+offset_left = 36.0
+offset_top = 399.0
+offset_right = 68.0
+offset_bottom = 415.0
+
+[node name="GrabbedSlot" parent="InventoryInterface" instance=ExtResource("4_jx3xw")]
+visible = false
+modulate = Color(1, 1, 1, 0.52549)
+layout_mode = 0
+offset_left = -42.0
+offset_top = -41.0
+offset_right = 22.0
+offset_bottom = 23.0
+scale = Vector2(0.6, 0.6)
+
+[node name="EquipInventory" parent="InventoryInterface" instance=ExtResource("5_nq2fr")]
+z_index = -1
+layout_mode = 0
+offset_left = 35.0
+offset_top = 233.0
+offset_right = 251.0
+offset_bottom = 399.0
+scale = Vector2(1, 1)
+
+[node name="ExternalInventory" parent="InventoryInterface" instance=ExtResource("6_015ts")]
+visible = false
+z_index = -1
+layout_mode = 0
+offset_left = 254.0
+offset_top = 233.0
+offset_right = 388.0
+offset_bottom = 335.0
+
+[node name="HotBarInventory" parent="." instance=ExtResource("7_akc5h")]
+z_index = -1
+anchors_preset = -1
+anchor_left = 0.55
+anchor_top = 1.0
+anchor_right = 0.55
+anchor_bottom = 1.0
+offset_left = -21.9999
+offset_top = 6.10352e-05
+offset_right = 34.0001
+offset_bottom = 16.0001
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme = ExtResource("1_36vus")
+
+[connection signal="gui_input" from="InventoryInterface" to="InventoryInterface" method="_on_gui_input"]
+[connection signal="visibility_changed" from="InventoryInterface" to="InventoryInterface" method="_on_visibility_changed"]

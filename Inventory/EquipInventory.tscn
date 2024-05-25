@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd3cprxbqi86q"]
+
+[ext_resource type="PackedScene" uid="uid://bwe48eo60ijh8" path="res://Inventory/Inventory.tscn" id="1_7cwm6"]
+[ext_resource type="PackedScene" uid="uid://xgl7ahpfy33l" path="res://Inventory/Slot.tscn" id="3_a5acu"]
+
+[node name="Inventory" instance=ExtResource("1_7cwm6")]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 216.0
+offset_bottom = 201.0
+
+[node name="ItemGrid" parent="MarginContainer" index="0"]
+columns = 3
+
+[node name="Slot" parent="MarginContainer/ItemGrid" index="0" instance=ExtResource("3_a5acu")]
+layout_mode = 2
+
+[node name="Slot2" parent="MarginContainer/ItemGrid" index="1" instance=ExtResource("3_a5acu")]
+layout_mode = 2
+
+[node name="Slot3" parent="MarginContainer/ItemGrid" index="2" instance=ExtResource("3_a5acu")]
+layout_mode = 2
+
+[node name="Slot4" parent="MarginContainer/ItemGrid" index="3" instance=ExtResource("3_a5acu")]
+layout_mode = 2
+
+[node name="Slot5" parent="MarginContainer/ItemGrid" index="4" instance=ExtResource("3_a5acu")]
+layout_mode = 2
+
+[node name="Slot6" parent="MarginContainer/ItemGrid" index="5" instance=ExtResource("3_a5acu")]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "Equipment"

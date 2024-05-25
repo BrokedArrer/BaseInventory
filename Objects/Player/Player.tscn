@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://ccjsprjwex7ye"]
+
+[ext_resource type="Texture2D" uid="uid://c11omk4dyrwg7" path="res://Art/Character v.2/NewCharAnims/CharIdles.png" id="1_5xxfp"]
+[ext_resource type="Script" path="res://Objects/Player/Player.gd" id="1_p7fqj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cr3cu"]
+radius = 3.3
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(407, 294)
+collision_layer = 2
+script = ExtResource("1_p7fqj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -16)
+texture = ExtResource("1_5xxfp")
+vframes = 4
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_cr3cu")

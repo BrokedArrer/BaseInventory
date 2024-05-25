@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://b4pek2v8w0xrr"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qyfd3"]
+load_path = "res://.godot/imported/treasure chests.png-d7ca50b8193d84bebaa3719529527489.ctex"
+
+[resource]
+atlas = SubResource("CompressedTexture2D_qyfd3")
+region = Rect2(0, 0, 32, 32)

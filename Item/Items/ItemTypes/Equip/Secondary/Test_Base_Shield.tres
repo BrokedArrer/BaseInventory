@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="EquipDataSecondary" load_steps=4 format=3 uid="uid://da4tco3wlk56k"]
+
+[ext_resource type="Script" path="res://Item/Items/ItemTypes/Equip/Secondary/Equip_Data_Secondary.gd" id="1_6s7gr"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g2vts"]
+load_path = "res://.godot/imported/Weapons and Equipment.png-4ebfac030092bb7b6000dbfc7f6ee8bd.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1kcl7"]
+atlas = SubResource("CompressedTexture2D_g2vts")
+region = Rect2(208, 1024, 16, 16)
+
+[resource]
+script = ExtResource("1_6s7gr")
+Armor = 1
+MinDamage = 1
+MaxDamage = 2
+Speed = 0
+Strength = 2
+Intelligence = 0
+Dexterity = 0
+Vitality = 0
+Luck = 0
+Health = 5
+Mana = 5
+name = "Wooden Shield"
+description = "A shield made from wood.*TEST ITEM*"
+stackable = false
+texture = SubResource("AtlasTexture_1kcl7")
+type = "Armor"
+rarity = "Rare"
+gold_value = 0
+silver_value = 0
+copper_value = 0

@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="InventoryDataEquip" load_steps=13 format=3 uid="uid://diwfpifv1tj6o"]
+
+[ext_resource type="Script" path="res://Inventory/Inventory_Data_Equip.gd" id="1_0o2yl"]
+[ext_resource type="Resource" uid="uid://c7xngyccv0uhg" path="res://Item/Items/ItemTypes/Equip/Accessory/Test_Base_Accessory.tres" id="2_sfsht"]
+[ext_resource type="Script" path="res://Inventory/Slot_Data.gd" id="3_40bi2"]
+[ext_resource type="Resource" uid="uid://boagntdt4r56g" path="res://Item/Items/ItemTypes/Equip/Chest/Test_Base_Chestplate.tres" id="4_35b1n"]
+[ext_resource type="Resource" uid="uid://b307y256tpr88" path="res://Item/Items/ItemTypes/Equip/Head/Test_Base_Helm.tres" id="5_0buod"]
+[ext_resource type="Resource" uid="uid://d2jug7nhl146m" path="res://Item/Items/ItemTypes/Equip/Legs/Test_Base_Leggings.tres" id="6_qto80"]
+[ext_resource type="Resource" uid="uid://ch1ufjm7mo43e" path="res://Item/Items/ItemTypes/Equip/Main/Test_Base_Sword.tres" id="7_o6hlj"]
+
+[sub_resource type="Resource" id="Resource_ipxcr"]
+script = ExtResource("3_40bi2")
+item_data = ExtResource("5_0buod")
+quantity = 1
+
+[sub_resource type="Resource" id="Resource_j82x4"]
+script = ExtResource("3_40bi2")
+item_data = ExtResource("4_35b1n")
+quantity = 1
+
+[sub_resource type="Resource" id="Resource_6ftql"]
+script = ExtResource("3_40bi2")
+item_data = ExtResource("6_qto80")
+quantity = 1
+
+[sub_resource type="Resource" id="Resource_me41j"]
+script = ExtResource("3_40bi2")
+item_data = ExtResource("7_o6hlj")
+quantity = 1
+
+[sub_resource type="Resource" id="Resource_oks5a"]
+script = ExtResource("3_40bi2")
+item_data = ExtResource("2_sfsht")
+quantity = 1
+
+[resource]
+script = ExtResource("1_0o2yl")
+slots = Array[ExtResource("3_40bi2")]([SubResource("Resource_ipxcr"), SubResource("Resource_j82x4"), SubResource("Resource_6ftql"), SubResource("Resource_me41j"), SubResource("Resource_oks5a"), null])
