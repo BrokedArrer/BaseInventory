@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://cpi0ega0q3ljt"]
 
 [ext_resource type="Script" uid="uid://6iwiccwrws82" path="res://scenes/world.gd" id="1_3t3uk"]
-[ext_resource type="PackedScene" uid="uid://ccjsprjwex7ye" path="res://objects/player/player.tscn" id="2_3m1vt"]
+[ext_resource type="PackedScene" uid="uid://b1y3qyj80plm1" path="res://objects/player/player.tscn" id="2_3m1vt"]
 [ext_resource type="Script" uid="uid://bps2mfkdqmamt" path="res://scenes/Camera2D.gd" id="6_5qkl7"]
-[ext_resource type="Script" uid="uid://tansjf8g2dui" path="res://inventory/inventory_data.gd" id="6_h0owe"]
+[ext_resource type="Script" uid="uid://tansjf8g2dui" path="res://inventory/Inventory_Data.gd" id="6_h0owe"]
 [ext_resource type="Resource" uid="uid://da4tco3wlk56k" path="res://item/items/item_types/equip/secondary/Test_Base_Shield.tres" id="8_4mrxx"]
 [ext_resource type="Script" uid="uid://dlrvv644hy0wb" path="res://inventory/slot_data.gd" id="8_gbe35"]
 [ext_resource type="PackedScene" uid="uid://n3e4prthg1iu" path="res://objects/interactables/chest.tscn" id="8_jdspc"]

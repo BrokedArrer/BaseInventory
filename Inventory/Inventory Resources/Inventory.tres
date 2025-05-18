@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="InventoryData" load_steps=7 format=3 uid="uid://beaevpmksat1j"]
 
-[ext_resource type="Script" uid="uid://tansjf8g2dui" path="res://inventory/inventory_data.gd" id="1_spen5"]
+[ext_resource type="Script" uid="uid://tansjf8g2dui" path="res://inventory/Inventory_Data.gd" id="1_spen5"]
 [ext_resource type="Script" uid="uid://dlrvv644hy0wb" path="res://inventory/slot_data.gd" id="3_7lerx"]
 [ext_resource type="Resource" uid="uid://c5kiysgd6dcty" path="res://item/items/item_types/consumables/Health_Potion.tres" id="3_nkfrw"]
-[ext_resource type="Resource" uid="uid://bjasbo6oafgyj" path="res://item/items/item_types/equip/head/Iron_Helm.tres" id="4_nkfrw"]
+[ext_resource type="Resource" uid="uid://bjasbo6oafgyj" path="res://item/items/item_types/equip/tools/Iron_Helm.tres" id="4_nkfrw"]
 
 [sub_resource type="Resource" id="Resource_pgrva"]
 script = ExtResource("3_7lerx")

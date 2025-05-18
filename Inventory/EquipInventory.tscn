@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://bd3cprxbqi86q"]
+[gd_scene load_steps=3 format=3 uid="uid://deo1wneywolma"]
 
-[ext_resource type="PackedScene" uid="uid://bwe48eo60ijh8" path="res://inventory/inventory.tscn" id="1_7cwm6"]
-[ext_resource type="PackedScene" uid="uid://xgl7ahpfy33l" path="res://inventory/slot.tscn" id="3_a5acu"]
+[ext_resource type="PackedScene" uid="uid://b67xdldlwm2bt" path="res://inventory/inventory.tscn" id="1_7cwm6"]
+[ext_resource type="PackedScene" uid="uid://dynmdwdiofdcu" path="res://inventory/slot.tscn" id="3_a5acu"]
 
 [node name="Inventory" instance=ExtResource("1_7cwm6")]
 self_modulate = Color(1, 1, 1, 0)

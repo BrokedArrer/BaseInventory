@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="InventoryDataEquip" load_steps=15 format=3 uid="uid://diwfpifv1tj6o"]
 
-[ext_resource type="Script" uid="uid://bgnkpntai8ygq" path="res://inventory/inventory_data_equip.gd" id="1_vwql0"]
+[ext_resource type="Script" uid="uid://bgnkpntai8ygq" path="res://inventory/Inventory_Data_Equip.gd" id="1_vwql0"]
 [ext_resource type="Resource" uid="uid://c7xngyccv0uhg" path="res://item/items/item_types/equip/accessory/Test_Base_Accessory.tres" id="2_sfsht"]
 [ext_resource type="Script" uid="uid://dlrvv644hy0wb" path="res://inventory/slot_data.gd" id="3_40bi2"]
 [ext_resource type="Resource" uid="uid://boagntdt4r56g" path="res://item/items/item_types/equip/chest/Test_Base_Chestplate.tres" id="4_35b1n"]

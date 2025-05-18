@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="InventoryDataHotbar" load_steps=3 format=3 uid="uid://c7ofd8bhutpdk"]
 
-[ext_resource type="Script" uid="uid://drq6kqyo7ln06" path="res://inventory/inventory_data_hotbar.gd" id="1_gn72m"]
+[ext_resource type="Script" uid="uid://drq6kqyo7ln06" path="res://inventory/Inventory_Data_Hotbar.gd" id="1_gn72m"]
 [ext_resource type="Script" uid="uid://dlrvv644hy0wb" path="res://inventory/slot_data.gd" id="2_jiuki"]
 
 [resource]

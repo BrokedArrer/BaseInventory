@@ -16,10 +16,9 @@ signal force_close()
 
 var target : Node = null
 
-
 func _ready() -> void:
 	PlayerManager.player = self
-	
+	#equip_inventory_data.inventory_updated.connect(PlayerManager.update_equipment)
 
 func _unhandled_input(_event: InputEvent):
 	if Focus.event_is_action_pressed(_event, "Inventory"):
@@ -43,9 +42,8 @@ func heal(_heal_value: int) -> void:
 	pass
 
 func hotbar_controls():
-	for i in range(1, 10):  # Changed from 0-9 to 1-9 to match input actions
+	for i in range(1, 10):
 		if Input.is_action_just_pressed("hotbar_" + str(i)):
-			# Use 0-based index (hotbar_1 = slot 0, etc.)
 			hotbar_inventory_data.use_slot_data(i - 1)
 
 func _on_body_entered(body) -> void:
@@ -64,7 +62,6 @@ func save_data():
 func load_data():
 	if SaveSystem.data:
 		SaveSystem.data.apply_to_player(self)
-		# Force all inventory updates
 		inventory_data.inventory_updated.emit(inventory_data)
 		equip_inventory_data.inventory_updated.emit(equip_inventory_data)
 		hotbar_inventory_data.inventory_updated.emit(hotbar_inventory_data)

@@ -9,6 +9,7 @@ region = Rect2(0, 16, 16, 16)
 
 [resource]
 script = ExtResource("1_0pfmu")
+tool_type = 0
 slot_type = 6
 name = "Testing Tool 01"
 description = "A tool for testing"

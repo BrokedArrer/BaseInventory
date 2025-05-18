@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="EquipDataTool" load_steps=4 format=3 uid="uid://bjasbo6oafgyj"]
+
+[ext_resource type="Script" uid="uid://be2fiphiq2l00" path="res://item/items/item_types/equip/tools/equip_data_tool.gd" id="1_y26qv"]
+[ext_resource type="Texture2D" uid="uid://uccd0wojgpc5" path="res://art/ItemSprites/pickaxe.png" id="2_u6ob8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5fvn"]
+atlas = ExtResource("2_u6ob8")
+
+[resource]
+script = ExtResource("1_y26qv")
+tool_type = 2
+slot_type = 6
+name = "Iron Helm"
+description = "A helm of iron.*TEST ITEM*"
+stackable = false
+texture = SubResource("AtlasTexture_p5fvn")
+type = "Armor"
+rarity = "Common"

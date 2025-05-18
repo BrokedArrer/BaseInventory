@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://ccjsprjwex7ye"]
+[gd_scene load_steps=8 format=3 uid="uid://b1y3qyj80plm1"]
 
 [ext_resource type="Texture2D" uid="uid://c11omk4dyrwg7" path="res://art/Character v.2/NewCharAnims/CharIdles.png" id="1_5xxfp"]
 [ext_resource type="Script" uid="uid://cc7d5ptuplmgu" path="res://objects/player/player.gd" id="1_p7fqj"]

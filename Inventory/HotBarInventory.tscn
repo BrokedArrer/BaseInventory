@@ -1,6 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://bps64iuxhpw05"]
+[gd_scene load_steps=4 format=3 uid="uid://bhypapm7127mv"]
 
-[ext_resource type="Script" uid="uid://cf77brinhhiyi" path="res://inventory/inventory.gd" id="1_46a8f"]
+[ext_resource type="Script" uid="uid://cf77brinhhiyi" path="res://inventory/Inventory.gd" id="1_46a8f"]
 [ext_resource type="Texture2D" uid="uid://c86yl4dqkvqy1" path="res://art/UI Art/InvUISprites/hotbar_bg.png" id="2_mavb1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gmsas"]
