@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EquipDataHead" load_steps=4 format=3 uid="uid://b307y256tpr88"]
+
+[ext_resource type="Script" uid="uid://u48ueq3q8i8o" path="res://item/items/item_types/equip/head/equip_data_head.gd" id="1_rbawy"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g2vts"]
+load_path = "res://.godot/imported/Weapons and Equipment.png-4ebfac030092bb7b6000dbfc7f6ee8bd.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_852jr"]
+atlas = SubResource("CompressedTexture2D_g2vts")
+region = Rect2(240, 1904, 16, 16)
+
+[resource]
+script = ExtResource("1_rbawy")
+slot_type = 1
+name = "Leather Helm"
+description = "A helm made from Leather.*TEST ITEM*"
+stackable = false
+texture = SubResource("AtlasTexture_852jr")
+type = "Test"
+rarity = "Test"

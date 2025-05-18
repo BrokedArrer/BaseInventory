@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://hep7rcsqagpb"
-path="res://.godot/imported/PixelatedLoveOld.ttf-9f5c02232d9977680c21142fdc9c57f2.fontdata"
+path="res://.godot/imported/PixelatedLoveOld.ttf-6d8ca72f488b874fdccf077c58272021.fontdata"
 
 [deps]
 
-source_file="res://Art/UI Art/Fonts/PixelatedLoveOld.ttf"
-dest_files=["res://.godot/imported/PixelatedLoveOld.ttf-9f5c02232d9977680c21142fdc9c57f2.fontdata"]
+source_file="res://art/UI Art/Fonts/PixelatedLoveOld.ttf"
+dest_files=["res://.godot/imported/PixelatedLoveOld.ttf-6d8ca72f488b874fdccf077c58272021.fontdata"]
 
 [params]
 
@@ -23,6 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 hinting=1
 subpixel_positioning=1
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]

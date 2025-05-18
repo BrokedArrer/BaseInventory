@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EquipDataAccessory" load_steps=4 format=3 uid="uid://c7xngyccv0uhg"]
+
+[ext_resource type="Script" uid="uid://c5ievxh4j7ki2" path="res://item/items/item_types/equip/accessory/equip_data_accessory.gd" id="1_iho10"]
+[ext_resource type="Texture2D" uid="uid://5b0aqh75gyr4" path="res://item/ItemAtlas'/ItemAtlas'Sprites/16x16/Loot and Treasure.png" id="2_1fn5w"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_28g5d"]
+atlas = ExtResource("2_1fn5w")
+region = Rect2(32, 64, 16, 16)
+
+[resource]
+script = ExtResource("1_iho10")
+speed = 2
+slot_type = 5
+name = "Beginner Trinket"
+description = "A beginner's trinket.*TEST ITEM*"
+stackable = false
+texture = SubResource("AtlasTexture_28g5d")
+type = "Test"
+rarity = "Test"

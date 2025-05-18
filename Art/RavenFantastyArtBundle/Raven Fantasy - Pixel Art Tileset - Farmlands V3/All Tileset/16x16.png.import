@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gwow08kl2n82"
-path="res://.godot/imported/16x16.png-289ff5f8974417a0c3316cfdd431e2d2.ctex"
+path="res://.godot/imported/16x16.png-98998166210dea8ba35a7ecb530e75c4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/RavenFantastyArtBundle/Raven Fantasy - Pixel Art Tileset - Farmlands V3/All Tileset/16x16.png"
-dest_files=["res://.godot/imported/16x16.png-289ff5f8974417a0c3316cfdd431e2d2.ctex"]
+source_file="res://art/RavenFantastyArtBundle/Raven Fantasy - Pixel Art Tileset - Farmlands V3/All Tileset/16x16.png"
+dest_files=["res://.godot/imported/16x16.png-98998166210dea8ba35a7ecb530e75c4.ctex"]
 
 [params]
 

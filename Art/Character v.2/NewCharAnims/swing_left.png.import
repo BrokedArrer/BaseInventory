@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://3hyq3twxwfkl"
-path="res://.godot/imported/swing_left.png-cd46ab9938180a8296f5ee96e18cb141.ctex"
+path="res://.godot/imported/swing_left.png-1d00dba8a1dbe92cbe70b82abc05d4ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Character v.2/NewCharAnims/swing_left.png"
-dest_files=["res://.godot/imported/swing_left.png-cd46ab9938180a8296f5ee96e18cb141.ctex"]
+source_file="res://art/Character v.2/NewCharAnims/swing_left.png"
+dest_files=["res://.godot/imported/swing_left.png-1d00dba8a1dbe92cbe70b82abc05d4ac.ctex"]
 
 [params]
 

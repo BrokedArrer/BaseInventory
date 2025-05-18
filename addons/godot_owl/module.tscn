@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://qjjhrd0lw533"]
 
-[ext_resource type="Script" path="res://addons/godot_owl/module.gd" id="1_lgpg6"]
+[ext_resource type="Script" uid="uid://b770pm72xnfsi" path="res://addons/godot_owl/module.gd" id="1_lgpg6"]
 [ext_resource type="Texture2D" uid="uid://dhnstd2x5uiw2" path="res://addons/godot_owl/icon.png" id="2_p31we"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uekhw"]

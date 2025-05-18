@@ -1,23 +1,41 @@
-[gd_scene load_steps=4 format=3 uid="uid://ccjsprjwex7ye"]
+[gd_scene load_steps=8 format=3 uid="uid://ccjsprjwex7ye"]
 
-[ext_resource type="Texture2D" uid="uid://c11omk4dyrwg7" path="res://Art/Character v.2/NewCharAnims/CharIdles.png" id="1_5xxfp"]
-[ext_resource type="Script" path="res://Objects/Player/Player.gd" id="1_p7fqj"]
+[ext_resource type="Texture2D" uid="uid://c11omk4dyrwg7" path="res://art/Character v.2/NewCharAnims/CharIdles.png" id="1_5xxfp"]
+[ext_resource type="Script" uid="uid://cc7d5ptuplmgu" path="res://objects/player/player.gd" id="1_p7fqj"]
+[ext_resource type="Resource" uid="uid://beaevpmksat1j" path="res://inventory/inventory resources/Inventory.tres" id="2_gnkmh"]
+[ext_resource type="Resource" uid="uid://diwfpifv1tj6o" path="res://inventory/inventory resources/Inventory_Data_Equip.tres" id="3_xkryw"]
+[ext_resource type="Resource" uid="uid://c7ofd8bhutpdk" path="res://inventory/inventory resources/Inventory_Data_Hotbar.tres" id="4_ow0dq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cr3cu"]
 radius = 3.3
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
-position = Vector2(407, 294)
-collision_layer = 2
+[sub_resource type="CircleShape2D" id="CircleShape2D_g7ett"]
+radius = 16.0312
+
+[node name="Player" type="CharacterBody2D" groups=["save"]]
 script = ExtResource("1_p7fqj")
+inventory_data = ExtResource("2_gnkmh")
+equip_inventory_data = ExtResource("3_xkryw")
+hotbar_inventory_data = ExtResource("4_ow0dq")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -16)
 texture = ExtResource("1_5xxfp")
 vframes = 4
-metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 position = Vector2(0, -2)
 shape = SubResource("CircleShape2D_cr3cu")
+
+[node name="InteractableArea" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableArea"]
+position = Vector2(0, -9)
+shape = SubResource("CircleShape2D_g7ett")
+debug_color = Color(0, 0.6, 0, 0)
+
+[connection signal="body_entered" from="InteractableArea" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="InteractableArea" to="." method="_on_body_exited"]

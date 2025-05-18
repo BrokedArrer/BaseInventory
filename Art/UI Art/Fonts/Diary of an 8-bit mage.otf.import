@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://du5i4nfkltda4"
-path="res://.godot/imported/Diary of an 8-bit mage.otf-7a9a385177ef06e4ea528da5bd59c757.fontdata"
+path="res://.godot/imported/Diary of an 8-bit mage.otf-e011754445c0ef24a677a910ffce5acd.fontdata"
 
 [deps]
 
-source_file="res://Art/UI Art/Fonts/Diary of an 8-bit mage.otf"
-dest_files=["res://.godot/imported/Diary of an 8-bit mage.otf-7a9a385177ef06e4ea528da5bd59c757.fontdata"]
+source_file="res://art/UI Art/Fonts/Diary of an 8-bit mage.otf"
+dest_files=["res://.godot/imported/Diary of an 8-bit mage.otf-e011754445c0ef24a677a910ffce5acd.fontdata"]
 
 [params]
 
@@ -23,6 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 hinting=1
 subpixel_positioning=1
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]

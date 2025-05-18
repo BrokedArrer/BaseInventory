@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dogaafnt4k84s"
-path="res://.godot/imported/Clarity.ttf-2fdd8240eab1c80590800e513804b3f7.fontdata"
+path="res://.godot/imported/Clarity.ttf-c9a25a172399d863906b9e0fdc009fa5.fontdata"
 
 [deps]
 
-source_file="res://Art/UI Art/Fonts/Clarity.ttf"
-dest_files=["res://.godot/imported/Clarity.ttf-2fdd8240eab1c80590800e513804b3f7.fontdata"]
+source_file="res://art/UI Art/Fonts/Clarity.ttf"
+dest_files=["res://.godot/imported/Clarity.ttf-c9a25a172399d863906b9e0fdc009fa5.fontdata"]
 
 [params]
 
@@ -23,6 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 hinting=1
 subpixel_positioning=1
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]

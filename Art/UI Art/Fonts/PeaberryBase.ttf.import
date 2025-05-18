@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dhdqka15ooiiw"
-path="res://.godot/imported/PeaberryBase.ttf-b8ff2c15c8153fea5866cb3530b7a0bc.fontdata"
+path="res://.godot/imported/PeaberryBase.ttf-b46d418b8c7de73c08fe9c37ac93c1a3.fontdata"
 
 [deps]
 
-source_file="res://Art/UI Art/Fonts/PeaberryBase.ttf"
-dest_files=["res://.godot/imported/PeaberryBase.ttf-b8ff2c15c8153fea5866cb3530b7a0bc.fontdata"]
+source_file="res://art/UI Art/Fonts/PeaberryBase.ttf"
+dest_files=["res://.godot/imported/PeaberryBase.ttf-b46d418b8c7de73c08fe9c37ac93c1a3.fontdata"]
 
 [params]
 
@@ -23,6 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 hinting=1
 subpixel_positioning=1
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]

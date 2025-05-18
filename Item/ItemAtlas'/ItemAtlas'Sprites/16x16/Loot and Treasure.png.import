@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://5b0aqh75gyr4"
-path="res://.godot/imported/Loot and Treasure.png-282eb59adb26aeb6ceabeba61127be48.ctex"
+path="res://.godot/imported/Loot and Treasure.png-14e4fd9621f87ed029e8804c7f9c016d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Item/ItemAtlas'/ItemAtlas'Sprites/16x16/Loot and Treasure.png"
-dest_files=["res://.godot/imported/Loot and Treasure.png-282eb59adb26aeb6ceabeba61127be48.ctex"]
+source_file="res://item/ItemAtlas'/ItemAtlas'Sprites/16x16/Loot and Treasure.png"
+dest_files=["res://.godot/imported/Loot and Treasure.png-14e4fd9621f87ed029e8804c7f9c016d.ctex"]
 
 [params]
 

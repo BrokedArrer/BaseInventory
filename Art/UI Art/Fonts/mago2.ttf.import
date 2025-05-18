@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bil21018vsp7s"
-path="res://.godot/imported/mago2.ttf-c8855ad2ba8f406e5c2d665030b6a3c4.fontdata"
+path="res://.godot/imported/mago2.ttf-645099850d840519961ffed92a288ae7.fontdata"
 
 [deps]
 
-source_file="res://Art/UI Art/Fonts/mago2.ttf"
-dest_files=["res://.godot/imported/mago2.ttf-c8855ad2ba8f406e5c2d665030b6a3c4.fontdata"]
+source_file="res://art/UI Art/Fonts/mago2.ttf"
+dest_files=["res://.godot/imported/mago2.ttf-645099850d840519961ffed92a288ae7.fontdata"]
 
 [params]
 
@@ -23,6 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 hinting=1
 subpixel_positioning=1
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]

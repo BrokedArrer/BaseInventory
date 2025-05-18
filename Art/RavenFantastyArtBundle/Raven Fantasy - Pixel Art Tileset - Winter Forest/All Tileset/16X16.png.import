@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jq10psvbl4yd"
-path="res://.godot/imported/16X16.png-77fc4605b34413e73519b37a7dee3e44.ctex"
+path="res://.godot/imported/16X16.png-940d024670bd402694021e959a6c8cfd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/RavenFantastyArtBundle/Raven Fantasy - Pixel Art Tileset - Winter Forest/All Tileset/16X16.png"
-dest_files=["res://.godot/imported/16X16.png-77fc4605b34413e73519b37a7dee3e44.ctex"]
+source_file="res://art/RavenFantastyArtBundle/Raven Fantasy - Pixel Art Tileset - Winter Forest/All Tileset/16X16.png"
+dest_files=["res://.godot/imported/16X16.png-940d024670bd402694021e959a6c8cfd.ctex"]
 
 [params]
 

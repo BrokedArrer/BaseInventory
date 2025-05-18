@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cl50qvqvce43h"
-path="res://.godot/imported/Salmon Typewriter 9 Regular.ttf-e18a5ea10d091431077911fe9d2118db.fontdata"
+path="res://.godot/imported/Salmon Typewriter 9 Regular.ttf-9042ea66012a87461792698b7c76a9d1.fontdata"
 
 [deps]
 
-source_file="res://Art/UI Art/Fonts/Salmon Typewriter 9 Regular.ttf"
-dest_files=["res://.godot/imported/Salmon Typewriter 9 Regular.ttf-e18a5ea10d091431077911fe9d2118db.fontdata"]
+source_file="res://art/UI Art/Fonts/Salmon Typewriter 9 Regular.ttf"
+dest_files=["res://.godot/imported/Salmon Typewriter 9 Regular.ttf-9042ea66012a87461792698b7c76a9d1.fontdata"]
 
 [params]
 
@@ -23,6 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 hinting=1
 subpixel_positioning=1
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]

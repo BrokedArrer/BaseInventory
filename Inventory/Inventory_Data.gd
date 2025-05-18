@@ -77,5 +77,3 @@ func pick_up_slot_data(slot_data: SlotData) -> bool:
 
 func on_slot_clicked(index: int, button:int) -> void:
 	inventory_interact.emit(self, index, button)
-
-

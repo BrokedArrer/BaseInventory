@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://beok2ddv63a7m"
-path="res://.godot/imported/Lavender.png-c759bb8d4197d82dacba780e27c59dd7.ctex"
+path="res://.godot/imported/Lavender.png-105b3e33bc5239e31b493ef3e3d64813.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/ItemSprites/FarmingSprites/Lavender.png"
-dest_files=["res://.godot/imported/Lavender.png-c759bb8d4197d82dacba780e27c59dd7.ctex"]
+source_file="res://art/ItemSprites/FarmingSprites/Lavender.png"
+dest_files=["res://.godot/imported/Lavender.png-105b3e33bc5239e31b493ef3e3d64813.ctex"]
 
 [params]
 

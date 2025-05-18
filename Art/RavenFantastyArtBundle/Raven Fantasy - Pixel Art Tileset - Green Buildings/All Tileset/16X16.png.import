@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bp6v6ik3brqsl"
-path="res://.godot/imported/16X16.png-f16a3931b11d31448629acccaf74ad28.ctex"
+path="res://.godot/imported/16X16.png-dfa7123dd53b1bbb85b72906025d4eb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/RavenFantastyArtBundle/Raven Fantasy - Pixel Art Tileset - Green Buildings/All Tileset/16X16.png"
-dest_files=["res://.godot/imported/16X16.png-f16a3931b11d31448629acccaf74ad28.ctex"]
+source_file="res://art/RavenFantastyArtBundle/Raven Fantasy - Pixel Art Tileset - Green Buildings/All Tileset/16X16.png"
+dest_files=["res://.godot/imported/16X16.png-dfa7123dd53b1bbb85b72906025d4eb1.ctex"]
 
 [params]
 

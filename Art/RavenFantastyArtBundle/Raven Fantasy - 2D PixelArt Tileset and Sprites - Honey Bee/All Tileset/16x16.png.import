@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dhumgahxd01e5"
-path="res://.godot/imported/16x16.png-7482a5018b85aa031602f4739fa2e7f2.ctex"
+path="res://.godot/imported/16x16.png-fb1b78f0f84f3d6b65f8cd08dd6317e4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/RavenFantastyArtBundle/Raven Fantasy - 2D PixelArt Tileset and Sprites - Honey Bee/All Tileset/16x16.png"
-dest_files=["res://.godot/imported/16x16.png-7482a5018b85aa031602f4739fa2e7f2.ctex"]
+source_file="res://art/RavenFantastyArtBundle/Raven Fantasy - 2D PixelArt Tileset and Sprites - Honey Bee/All Tileset/16x16.png"
+dest_files=["res://.godot/imported/16x16.png-fb1b78f0f84f3d6b65f8cd08dd6317e4.ctex"]
 
 [params]
 

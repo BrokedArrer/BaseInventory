@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://n3e4prthg1iu"]
 
-[ext_resource type="Script" path="res://Objects/InteractableScripts/Chest.gd" id="1_yvsfx"]
+[ext_resource type="Script" uid="uid://dxbx1hmmd4nok" path="res://objects/interactable_scripts/chest.gd" id="1_yvsfx"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qyfd3"]
 load_path = "res://.godot/imported/treasure chests.png-d7ca50b8193d84bebaa3719529527489.ctex"
@@ -13,7 +13,7 @@ region = Rect2(0, 0, 32, 32)
 size = Vector2(14, 9)
 
 [node name="Chest" type="StaticBody2D" groups=["external_inventory"]]
-collision_layer = 5
+collision_layer = 17
 collision_mask = 0
 script = ExtResource("1_yvsfx")
 

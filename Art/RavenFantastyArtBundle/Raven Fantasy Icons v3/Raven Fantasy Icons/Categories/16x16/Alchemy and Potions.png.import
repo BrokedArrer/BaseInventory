@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ykmi77kb40m5"
-path="res://.godot/imported/Alchemy and Potions.png-3e664ba0a056c884d2ed2be9937155d4.ctex"
+path="res://.godot/imported/Alchemy and Potions.png-848c0470f279a11cb40bf791456565e7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/RavenFantastyArtBundle/Raven Fantasy Icons v3/Raven Fantasy Icons/Categories/16x16/Alchemy and Potions.png"
-dest_files=["res://.godot/imported/Alchemy and Potions.png-3e664ba0a056c884d2ed2be9937155d4.ctex"]
+source_file="res://art/RavenFantastyArtBundle/Raven Fantasy Icons v3/Raven Fantasy Icons/Categories/16x16/Alchemy and Potions.png"
+dest_files=["res://.godot/imported/Alchemy and Potions.png-848c0470f279a11cb40bf791456565e7.ctex"]
 
 [params]
 

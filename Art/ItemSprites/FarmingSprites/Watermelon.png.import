@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwixyxf8b755g"
-path="res://.godot/imported/Watermelon.png-13f711a528f62810dd987159aff5d025.ctex"
+path="res://.godot/imported/Watermelon.png-a804974f868f1248cfe127ae0cb47a3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/ItemSprites/FarmingSprites/Watermelon.png"
-dest_files=["res://.godot/imported/Watermelon.png-13f711a528f62810dd987159aff5d025.ctex"]
+source_file="res://art/ItemSprites/FarmingSprites/Watermelon.png"
+dest_files=["res://.godot/imported/Watermelon.png-a804974f868f1248cfe127ae0cb47a3f.ctex"]
 
 [params]
 

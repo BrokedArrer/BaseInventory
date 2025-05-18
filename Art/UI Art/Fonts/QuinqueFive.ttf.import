@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cmcew2dongalf"
-path="res://.godot/imported/QuinqueFive.ttf-9711b10ed06b7f523a9898cc265439f2.fontdata"
+path="res://.godot/imported/QuinqueFive.ttf-aaf9a9837f3ef4d9fa24e965a3985999.fontdata"
 
 [deps]
 
-source_file="res://Art/UI Art/Fonts/QuinqueFive.ttf"
-dest_files=["res://.godot/imported/QuinqueFive.ttf-9711b10ed06b7f523a9898cc265439f2.fontdata"]
+source_file="res://art/UI Art/Fonts/QuinqueFive.ttf"
+dest_files=["res://.godot/imported/QuinqueFive.ttf-aaf9a9837f3ef4d9fa24e965a3985999.fontdata"]
 
 [params]
 
@@ -23,6 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 hinting=1
 subpixel_positioning=1
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]

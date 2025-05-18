@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://vrbq3gu0eok4"
-path="res://.godot/imported/BitPotion.ttf-b8e2de4c94c2b8977b5db56a83e62585.fontdata"
+path="res://.godot/imported/BitPotion.ttf-1dfd99c882b8b1d7a2d10f9f923e39f7.fontdata"
 
 [deps]
 
-source_file="res://Art/UI Art/Fonts/BitPotion.ttf"
-dest_files=["res://.godot/imported/BitPotion.ttf-b8e2de4c94c2b8977b5db56a83e62585.fontdata"]
+source_file="res://art/UI Art/Fonts/BitPotion.ttf"
+dest_files=["res://.godot/imported/BitPotion.ttf-1dfd99c882b8b1d7a2d10f9f923e39f7.fontdata"]
 
 [params]
 
@@ -23,6 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 hinting=1
 subpixel_positioning=1
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]

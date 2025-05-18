@@ -61,4 +61,3 @@ func use_slot_data(index: int) -> void:
 func on_slot_clicked(index: int, button: int):
 	# Emit the inventory interaction signal with the clicked slot's index and button
 	inventory_interact.emit(self, index, button)
-

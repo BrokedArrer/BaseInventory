@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://0vl5tobvvrtp"
-path="res://.godot/imported/Beans.png-c104c4f8c2b05dc80d7a6de05434ea21.ctex"
+path="res://.godot/imported/Beans.png-a9ecf807567b5eb736aa2b7fd8d40079.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/ItemSprites/FarmingSprites/Beans.png"
-dest_files=["res://.godot/imported/Beans.png-c104c4f8c2b05dc80d7a6de05434ea21.ctex"]
+source_file="res://art/ItemSprites/FarmingSprites/Beans.png"
+dest_files=["res://.godot/imported/Beans.png-a9ecf807567b5eb736aa2b7fd8d40079.ctex"]
 
 [params]
 

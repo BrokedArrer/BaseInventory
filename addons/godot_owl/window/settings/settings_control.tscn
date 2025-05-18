@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://b4coicpnc5cjc"]
 
-[ext_resource type="Script" path="res://addons/godot_owl/window/settings/settings_control.gd" id="1_78hsa"]
+[ext_resource type="Script" uid="uid://cafqtg4qgqroc" path="res://addons/godot_owl/window/settings/settings_control.gd" id="1_78hsa"]
 
 [node name="statistics_modal" type="Control"]
 custom_minimum_size = Vector2(480, 320)

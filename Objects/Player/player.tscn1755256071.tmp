@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://ccjsprjwex7ye"]
+
+[ext_resource type="Texture2D" uid="uid://c11omk4dyrwg7" path="res://Art/Character v.2/NewCharAnims/CharIdles.png" id="1_5xxfp"]
+[ext_resource type="Script" uid="uid://cc7d5ptuplmgu" path="res://objects/player/player.gd" id="1_p7fqj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cr3cu"]
+radius = 3.3
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g7ett"]
+radius = 12.0416
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_p7fqj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -16)
+texture = ExtResource("1_5xxfp")
+vframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -2)
+shape = SubResource("CircleShape2D_cr3cu")
+
+[node name="InteractableArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableArea"]
+position = Vector2(0, -9)
+shape = SubResource("CircleShape2D_g7ett")
+debug_color = Color(0, 0.6, 0, 0)
+
+[connection signal="body_entered" from="InteractableArea" to="." method="_on_interactable_area_entered"]
+[connection signal="body_exited" from="InteractableArea" to="." method="_on_interactable_area_exited"]

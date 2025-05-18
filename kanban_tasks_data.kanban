@@ -1,0 +1,105 @@
+{
+	"categories": [
+		{
+			"uuid": "5fb32ba6-2c6f-40b7-808b-470233279d18",
+			"title": "Player",
+			"color": "009d28"
+		},
+		{
+			"uuid": "2e97a648-05b9-42ec-bdd2-fc48841c6c41",
+			"title": "System",
+			"color": "0f68f3"
+		},
+		{
+			"uuid": "b9453001-079a-4109-b753-5993c42ad432",
+			"title": "Component",
+			"color": "c38708"
+		},
+		{
+			"uuid": "25bd7646-9813-436c-a0be-c93f34a5a437",
+			"title": "Bug",
+			"color": "bd1919"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "0ef62f1a-a883-4e6b-b8b9-0b845d96244c",
+			"title": "Todo",
+			"tasks": [
+				"ae121822-991e-4fec-81bb-75ae2fcae5fc",
+				"0a255417-f99d-4497-9377-f05d5affd703"
+			]
+		},
+		{
+			"uuid": "919b77ac-d194-408f-a4fa-59f7bd010703",
+			"title": "Doing",
+			"tasks": [
+				"d1e64f8b-e159-4dbb-bdbc-1f70f1f8b2da"
+			]
+		},
+		{
+			"uuid": "0335ddac-1fa6-46eb-b49f-0ba60c04172e",
+			"title": "Done",
+			"tasks": []
+		},
+		{
+			"uuid": "7649db37-4c86-491e-bb15-f1e4b265dc54",
+			"title": "Notes",
+			"tasks": [
+				"a2113d0f-ea3c-4afa-adb4-1489b601dfe4"
+			]
+		},
+		{
+			"uuid": "a540ba4e-96b6-4cb8-824c-91956eb234af",
+			"title": "Ideas",
+			"tasks": []
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "a2113d0f-ea3c-4afa-adb4-1489b601dfe4",
+			"title": "Player Notes",
+			"description": "Player interactable searches layer 5, with mask 5 to find bodys with a player_interact function and calls that function.",
+			"category": "5fb32ba6-2c6f-40b7-808b-470233279d18",
+			"steps": []
+		},
+		{
+			"uuid": "d1e64f8b-e159-4dbb-bdbc-1f70f1f8b2da",
+			"title": "Save_System/SaveData",
+			"description": "Currently capable of saving and loading inventories, and player position.",
+			"category": "2e97a648-05b9-42ec-bdd2-fc48841c6c41",
+			"steps": []
+		},
+		{
+			"uuid": "ae121822-991e-4fec-81bb-75ae2fcae5fc",
+			"title": "Controller support",
+			"description": "Need to implement a way to focus slots when using controller and allowing the player to be able to open popup menus for items in the inventory/equipment \n\nalso need to have hotbar items selectable with R1 and L1 and usable with X, ",
+			"category": "2e97a648-05b9-42ec-bdd2-fc48841c6c41",
+			"steps": []
+		},
+		{
+			"uuid": "0a255417-f99d-4497-9377-f05d5affd703",
+			"title": "Hotbar selection",
+			"description": "need to implement a way to select hotbar items with mousewheel, and need to implement a way to display selected hotbar slot.",
+			"category": "2e97a648-05b9-42ec-bdd2-fc48841c6c41",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"0ef62f1a-a883-4e6b-b8b9-0b845d96244c",
+				"a540ba4e-96b6-4cb8-824c-91956eb234af"
+			],
+			[
+				"919b77ac-d194-408f-a4fa-59f7bd010703"
+			],
+			[
+				"0335ddac-1fa6-46eb-b49f-0ba60c04172e"
+			],
+			[
+				"7649db37-4c86-491e-bb15-f1e4b265dc54"
+			]
+		]
+	}
+}

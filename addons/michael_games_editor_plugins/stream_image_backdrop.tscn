@@ -1,0 +1,76 @@
+[gd_scene load_steps=4 format=3 uid="uid://bedx8njb5si7b"]
+
+[ext_resource type="Script" uid="uid://bavc6b2xl7quc" path="res://addons/michael_games_editor_plugins/stream_image_backdrop.gd" id="1_laiv6"]
+
+[sub_resource type="Gradient" id="Gradient_5xy7v"]
+offsets = PackedFloat32Array(0, 0.519481, 1)
+colors = PackedColorArray(0.239216, 0.152941, 0.25098, 1, 0.156863, 0.133333, 0.211765, 1, 0.0980392, 0.0980392, 0.0980392, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_f4r68"]
+gradient = SubResource("Gradient_5xy7v")
+fill = 1
+fill_from = Vector2(0.5, 1)
+fill_to = Vector2(0.5, 0)
+
+[node name="Mike" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_laiv6")
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+ignore_time_scale = true
+
+[node name="Control3" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -16.0
+offset_top = -19.0
+offset_right = -16.0
+offset_bottom = -19.0
+grow_vertical = 0
+
+[node name="ShortcutStack" type="VBoxContainer" parent="Control3"]
+unique_name_in_owner = true
+z_index = 100
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -500.0
+offset_top = -120.0
+offset_bottom = -79.0
+grow_horizontal = 0
+grow_vertical = 0
+mouse_filter = 2
+theme_override_constants/separation = 20
+alignment = 2
+
+[node name="Control" type="Control" parent="."]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -243.0
+offset_right = 243.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_f4r68")

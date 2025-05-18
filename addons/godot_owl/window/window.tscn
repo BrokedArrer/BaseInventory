@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bguyfrvxtqsy7"]
 
-[ext_resource type="Script" path="res://addons/godot_owl/window/main/window.gd" id="1_clkye"]
+[ext_resource type="Script" uid="uid://b12fopx6r1iok" path="res://addons/godot_owl/window/main/window.gd" id="1_clkye"]
 
 [node name="window" type="Window"]
 disable_3d = true

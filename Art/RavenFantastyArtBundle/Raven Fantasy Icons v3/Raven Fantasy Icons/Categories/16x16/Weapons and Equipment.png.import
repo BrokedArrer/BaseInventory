@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pnx4fe0dujeh"
-path="res://.godot/imported/Weapons and Equipment.png-50b71f774e994f61de2ca2d7df733361.ctex"
+path="res://.godot/imported/Weapons and Equipment.png-b70f1b2ead7abb8f458b08bf352b2453.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/RavenFantastyArtBundle/Raven Fantasy Icons v3/Raven Fantasy Icons/Categories/16x16/Weapons and Equipment.png"
-dest_files=["res://.godot/imported/Weapons and Equipment.png-50b71f774e994f61de2ca2d7df733361.ctex"]
+source_file="res://art/RavenFantastyArtBundle/Raven Fantasy Icons v3/Raven Fantasy Icons/Categories/16x16/Weapons and Equipment.png"
+dest_files=["res://.godot/imported/Weapons and Equipment.png-b70f1b2ead7abb8f458b08bf352b2453.ctex"]
 
 [params]
 

@@ -1,50 +1,19 @@
-[gd_resource type="Resource" script_class="InventoryData" load_steps=12 format=3 uid="uid://beaevpmksat1j"]
+[gd_resource type="Resource" script_class="InventoryData" load_steps=7 format=3 uid="uid://beaevpmksat1j"]
 
-[ext_resource type="Script" path="res://Inventory/Inventory_Data.gd" id="1_spen5"]
-[ext_resource type="Script" path="res://Item/Item_Data.gd" id="3_3bsry"]
-[ext_resource type="Script" path="res://Inventory/Slot_Data.gd" id="3_7lerx"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tobnc"]
-load_path = "res://.godot/imported/spritesheet_16x16.png-4bee5581cff85eb5709fb6f2e32b1acf.ctex"
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1uoca"]
-atlas = SubResource("CompressedTexture2D_tobnc")
-region = Rect2(208, 320, 16, 16)
-
-[sub_resource type="Resource" id="Resource_urltx"]
-script = ExtResource("3_3bsry")
-name = "Iron Ingot"
-description = "A bar of Iron for crafting"
-stackable = true
-texture = SubResource("AtlasTexture_1uoca")
-type = ""
-rarity = "Material"
+[ext_resource type="Script" uid="uid://tansjf8g2dui" path="res://inventory/inventory_data.gd" id="1_spen5"]
+[ext_resource type="Script" uid="uid://dlrvv644hy0wb" path="res://inventory/slot_data.gd" id="3_7lerx"]
+[ext_resource type="Resource" uid="uid://c5kiysgd6dcty" path="res://item/items/item_types/consumables/Health_Potion.tres" id="3_nkfrw"]
+[ext_resource type="Resource" uid="uid://bjasbo6oafgyj" path="res://item/items/item_types/equip/head/Iron_Helm.tres" id="4_nkfrw"]
 
 [sub_resource type="Resource" id="Resource_pgrva"]
 script = ExtResource("3_7lerx")
-item_data = SubResource("Resource_urltx")
+item_data = ExtResource("3_nkfrw")
 quantity = 5
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5kw7y"]
-load_path = "res://.godot/imported/spritesheet_16x16.png-4bee5581cff85eb5709fb6f2e32b1acf.ctex"
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_y7v7e"]
-atlas = SubResource("CompressedTexture2D_5kw7y")
-region = Rect2(208, 336, 16, 16)
-
-[sub_resource type="Resource" id="Resource_5k34n"]
-script = ExtResource("3_3bsry")
-name = "Stick"
-description = "A Stick for crafting."
-stackable = true
-texture = SubResource("AtlasTexture_y7v7e")
-type = ""
-rarity = "Material"
 
 [sub_resource type="Resource" id="Resource_oa7nr"]
 script = ExtResource("3_7lerx")
-item_data = SubResource("Resource_5k34n")
-quantity = 5
+item_data = ExtResource("4_nkfrw")
+quantity = 1
 
 [resource]
 script = ExtResource("1_spen5")

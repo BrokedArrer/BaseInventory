@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bampn4qwleer4"
-path="res://.godot/imported/mago1.ttf-19900e14c8c742fb5195c491aa221667.fontdata"
+path="res://.godot/imported/mago1.ttf-473be253efbcb0adc17f7cb8994d1ef0.fontdata"
 
 [deps]
 
-source_file="res://Art/UI Art/Fonts/mago1.ttf"
-dest_files=["res://.godot/imported/mago1.ttf-19900e14c8c742fb5195c491aa221667.fontdata"]
+source_file="res://art/UI Art/Fonts/mago1.ttf"
+dest_files=["res://.godot/imported/mago1.ttf-473be253efbcb0adc17f7cb8994d1ef0.fontdata"]
 
 [params]
 
@@ -23,6 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 hinting=1
 subpixel_positioning=1
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]

@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://e3bne01wlkiw"
-path="res://.godot/imported/DungeonFont.ttf-d2144196bb913c071c72a3e2abda8979.fontdata"
+path="res://.godot/imported/DungeonFont.ttf-1861f9607df78222c13930653becc663.fontdata"
 
 [deps]
 
-source_file="res://Art/UI Art/Fonts/DungeonFont.ttf"
-dest_files=["res://.godot/imported/DungeonFont.ttf-d2144196bb913c071c72a3e2abda8979.fontdata"]
+source_file="res://art/UI Art/Fonts/DungeonFont.ttf"
+dest_files=["res://.godot/imported/DungeonFont.ttf-1861f9607df78222c13930653becc663.fontdata"]
 
 [params]
 
@@ -23,6 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 hinting=1
 subpixel_positioning=1
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]

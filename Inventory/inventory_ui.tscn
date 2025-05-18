@@ -1,12 +1,12 @@
 [gd_scene load_steps=8 format=3 uid="uid://dbs1uxhxnebv8"]
 
-[ext_resource type="Theme" uid="uid://d20a5atje1klx" path="res://Scenes/FontTheme.tres" id="1_36vus"]
-[ext_resource type="Script" path="res://Inventory/Inventory_Interface.gd" id="2_wfl23"]
-[ext_resource type="PackedScene" uid="uid://bwe48eo60ijh8" path="res://Inventory/Inventory.tscn" id="3_eeax8"]
-[ext_resource type="PackedScene" uid="uid://xgl7ahpfy33l" path="res://Inventory/Slot.tscn" id="4_jx3xw"]
-[ext_resource type="PackedScene" uid="uid://bd3cprxbqi86q" path="res://Inventory/EquipInventory.tscn" id="5_nq2fr"]
-[ext_resource type="PackedScene" uid="uid://4opxibybt3ui" path="res://Inventory/ExternalInventory.tscn" id="6_015ts"]
-[ext_resource type="PackedScene" uid="uid://bps64iuxhpw05" path="res://Inventory/HotBarInventory.tscn" id="7_akc5h"]
+[ext_resource type="Theme" uid="uid://d20a5atje1klx" path="res://scenes/FontTheme.tres" id="1_36vus"]
+[ext_resource type="Script" uid="uid://3bbqufsjjlr0" path="res://inventory/inventory_interface.gd" id="2_wfl23"]
+[ext_resource type="PackedScene" uid="uid://bwe48eo60ijh8" path="res://inventory/inventory.tscn" id="3_eeax8"]
+[ext_resource type="PackedScene" uid="uid://xgl7ahpfy33l" path="res://inventory/slot.tscn" id="4_jx3xw"]
+[ext_resource type="PackedScene" uid="uid://bd3cprxbqi86q" path="res://inventory/equipinventory.tscn" id="5_nq2fr"]
+[ext_resource type="PackedScene" uid="uid://4opxibybt3ui" path="res://inventory/externalinventory.tscn" id="6_015ts"]
+[ext_resource type="PackedScene" uid="uid://bps64iuxhpw05" path="res://inventory/hotbarinventory.tscn" id="7_akc5h"]
 
 [node name="InventoryUI" type="CanvasLayer"]
 
@@ -42,9 +42,9 @@ scale = Vector2(0.6, 0.6)
 z_index = -1
 layout_mode = 0
 offset_left = 35.0
-offset_top = 233.0
+offset_top = 182.0
 offset_right = 251.0
-offset_bottom = 399.0
+offset_bottom = 398.0
 scale = Vector2(1, 1)
 
 [node name="ExternalInventory" parent="InventoryInterface" instance=ExtResource("6_015ts")]

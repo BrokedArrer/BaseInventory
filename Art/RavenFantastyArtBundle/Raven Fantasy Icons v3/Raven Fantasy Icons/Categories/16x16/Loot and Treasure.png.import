@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://l4emltblfwol"
-path="res://.godot/imported/Loot and Treasure.png-6ed16322322c991b413d390ff56b631e.ctex"
+path="res://.godot/imported/Loot and Treasure.png-9d1537ce4769134b2be1c61005aca029.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/RavenFantastyArtBundle/Raven Fantasy Icons v3/Raven Fantasy Icons/Categories/16x16/Loot and Treasure.png"
-dest_files=["res://.godot/imported/Loot and Treasure.png-6ed16322322c991b413d390ff56b631e.ctex"]
+source_file="res://art/RavenFantastyArtBundle/Raven Fantasy Icons v3/Raven Fantasy Icons/Categories/16x16/Loot and Treasure.png"
+dest_files=["res://.godot/imported/Loot and Treasure.png-9d1537ce4769134b2be1c61005aca029.ctex"]
 
 [params]
 

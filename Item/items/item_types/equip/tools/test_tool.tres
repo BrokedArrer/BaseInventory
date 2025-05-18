@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="EquipDataTool" load_steps=4 format=3 uid="uid://b6vjbogf8sxnx"]
+
+[ext_resource type="Script" uid="uid://be2fiphiq2l00" path="res://item/items/item_types/equip/tools/equip_data_tool.gd" id="1_0pfmu"]
+[ext_resource type="Texture2D" uid="uid://cw4sbfqq2gd2u" path="res://art/ItemSprites/all the icons (gardens).png" id="2_2mkn4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hv7yj"]
+atlas = ExtResource("2_2mkn4")
+region = Rect2(0, 16, 16, 16)
+
+[resource]
+script = ExtResource("1_0pfmu")
+slot_type = 6
+name = "Testing Tool 01"
+description = "A tool for testing"
+stackable = false
+texture = SubResource("AtlasTexture_hv7yj")
+type = "Tool"
+rarity = "Common"
+metadata/_custom_type_script = "uid://be2fiphiq2l00"

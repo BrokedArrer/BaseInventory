@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4p2njf8ygitq"
-path="res://.godot/imported/16X16.png-3afaa361b70aaf04b18a424074c43461.ctex"
+path="res://.godot/imported/16X16.png-50c91366e18081e064b051a002d4d036.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/RavenFantastyArtBundle/Raven Fantasy - Pixel Art Tileset - Beach, Ocean and Shore/All Tileset/16X16.png"
-dest_files=["res://.godot/imported/16X16.png-3afaa361b70aaf04b18a424074c43461.ctex"]
+source_file="res://art/RavenFantastyArtBundle/Raven Fantasy - Pixel Art Tileset - Beach, Ocean and Shore/All Tileset/16X16.png"
+dest_files=["res://.godot/imported/16X16.png-50c91366e18081e064b051a002d4d036.ctex"]
 
 [params]
 

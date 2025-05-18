@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bvjik3dh81a0o"
-path="res://.godot/imported/swing_right.png-05a3502392253cedb8c9b581a2feeb41.ctex"
+path="res://.godot/imported/swing_right.png-1516641822453768489c36cbd2530608.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Character v.2/NewCharAnims/swing_right.png"
-dest_files=["res://.godot/imported/swing_right.png-05a3502392253cedb8c9b581a2feeb41.ctex"]
+source_file="res://art/Character v.2/NewCharAnims/swing_right.png"
+dest_files=["res://.godot/imported/swing_right.png-1516641822453768489c36cbd2530608.ctex"]
 
 [params]
 

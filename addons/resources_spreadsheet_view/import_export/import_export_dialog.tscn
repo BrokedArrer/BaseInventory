@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://b413igx28kkvb"]
 
-[ext_resource type="Script" path="res://addons/resources_spreadsheet_view/import_export/import_export_dialog.gd" id="1"]
-[ext_resource type="Script" path="res://addons/resources_spreadsheet_view/import_export/formats_export/export_csv.gd" id="2_33c6s"]
-[ext_resource type="Script" path="res://addons/resources_spreadsheet_view/import_export/formats_import/import_csv.gd" id="2_fxayt"]
+[ext_resource type="Script" uid="uid://c3dlcf0w7x2dj" path="res://addons/resources_spreadsheet_view/import_export/import_export_dialog.gd" id="1"]
+[ext_resource type="Script" uid="uid://dnhlaly0cryd7" path="res://addons/resources_spreadsheet_view/import_export/formats_export/export_csv.gd" id="2_33c6s"]
+[ext_resource type="Script" uid="uid://dpp1biykvtwtl" path="res://addons/resources_spreadsheet_view/import_export/formats_import/import_csv.gd" id="2_fxayt"]
 [ext_resource type="PackedScene" uid="uid://b8llymigbprh6" path="res://addons/resources_spreadsheet_view/import_export/property_list_item.tscn" id="2_xfhmf"]
 [ext_resource type="PackedScene" uid="uid://ckhf3bqy2rqjr" path="res://addons/resources_spreadsheet_view/import_export/import_export_enum_format.tscn" id="4"]
 

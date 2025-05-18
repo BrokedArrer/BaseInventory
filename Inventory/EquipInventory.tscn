@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bd3cprxbqi86q"]
 
-[ext_resource type="PackedScene" uid="uid://bwe48eo60ijh8" path="res://Inventory/Inventory.tscn" id="1_7cwm6"]
-[ext_resource type="PackedScene" uid="uid://xgl7ahpfy33l" path="res://Inventory/Slot.tscn" id="3_a5acu"]
+[ext_resource type="PackedScene" uid="uid://bwe48eo60ijh8" path="res://inventory/inventory.tscn" id="1_7cwm6"]
+[ext_resource type="PackedScene" uid="uid://xgl7ahpfy33l" path="res://inventory/slot.tscn" id="3_a5acu"]
 
 [node name="Inventory" instance=ExtResource("1_7cwm6")]
 self_modulate = Color(1, 1, 1, 0)
@@ -13,21 +13,31 @@ columns = 3
 
 [node name="Slot" parent="MarginContainer/ItemGrid" index="0" instance=ExtResource("3_a5acu")]
 layout_mode = 2
+slot_type = 1
 
 [node name="Slot2" parent="MarginContainer/ItemGrid" index="1" instance=ExtResource("3_a5acu")]
 layout_mode = 2
+slot_type = 2
 
 [node name="Slot3" parent="MarginContainer/ItemGrid" index="2" instance=ExtResource("3_a5acu")]
 layout_mode = 2
+slot_type = 3
 
 [node name="Slot4" parent="MarginContainer/ItemGrid" index="3" instance=ExtResource("3_a5acu")]
 layout_mode = 2
+slot_type = 4
 
 [node name="Slot5" parent="MarginContainer/ItemGrid" index="4" instance=ExtResource("3_a5acu")]
 layout_mode = 2
+slot_type = 5
 
 [node name="Slot6" parent="MarginContainer/ItemGrid" index="5" instance=ExtResource("3_a5acu")]
 layout_mode = 2
+slot_type = 7
+
+[node name="Slot7" parent="MarginContainer/ItemGrid" index="6" instance=ExtResource("3_a5acu")]
+layout_mode = 2
+slot_type = 6
 
 [node name="Label" type="Label" parent="MarginContainer" index="1"]
 layout_mode = 2

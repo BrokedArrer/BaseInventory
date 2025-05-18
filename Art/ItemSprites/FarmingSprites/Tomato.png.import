@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dei12w2fusweg"
-path="res://.godot/imported/Tomato.png-86e0d86a86181c5b3ad0b04c15cb9266.ctex"
+path="res://.godot/imported/Tomato.png-62c727599dd8e57ab2fc03ae182be018.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/ItemSprites/FarmingSprites/Tomato.png"
-dest_files=["res://.godot/imported/Tomato.png-86e0d86a86181c5b3ad0b04c15cb9266.ctex"]
+source_file="res://art/ItemSprites/FarmingSprites/Tomato.png"
+dest_files=["res://.godot/imported/Tomato.png-62c727599dd8e57ab2fc03ae182be018.ctex"]
 
 [params]
 

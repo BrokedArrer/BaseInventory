@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d0dmami56wxwc"
-path="res://.godot/imported/CoinAnim.png-0d482b310c05976f0aaf24273e77c9f7.ctex"
+path="res://.godot/imported/CoinAnim.png-140d7c7bce46839c660dc8a717e313df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/ItemSprites/CoinAnim.png"
-dest_files=["res://.godot/imported/CoinAnim.png-0d482b310c05976f0aaf24273e77c9f7.ctex"]
+source_file="res://art/ItemSprites/CoinAnim.png"
+dest_files=["res://.godot/imported/CoinAnim.png-140d7c7bce46839c660dc8a717e313df.ctex"]
 
 [params]
 

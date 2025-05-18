@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://2wy5d1kgwn3y"
-path="res://.godot/imported/mago3.ttf-63152d08553d181652873650998f4199.fontdata"
+path="res://.godot/imported/mago3.ttf-f0ab0130a4e824473b94c996c0f420f2.fontdata"
 
 [deps]
 
-source_file="res://Art/UI Art/Fonts/mago3.ttf"
-dest_files=["res://.godot/imported/mago3.ttf-63152d08553d181652873650998f4199.fontdata"]
+source_file="res://art/UI Art/Fonts/mago3.ttf"
+dest_files=["res://.godot/imported/mago3.ttf-f0ab0130a4e824473b94c996c0f420f2.fontdata"]
 
 [params]
 
@@ -23,6 +23,7 @@ allow_system_fallback=true
 force_autohinter=false
 hinting=1
 subpixel_positioning=1
+keep_rounding_remainders=true
 oversampling=0.0
 Fallbacks=null
 fallbacks=[]

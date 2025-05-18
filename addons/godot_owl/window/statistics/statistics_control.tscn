@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://b8ynrny1nyrdl"]
 
-[ext_resource type="Script" path="res://addons/godot_owl/window/statistics/statistics_control.gd" id="1_yi3w2"]
+[ext_resource type="Script" uid="uid://idm0u6jayoq" path="res://addons/godot_owl/window/statistics/statistics_control.gd" id="1_yi3w2"]
 [ext_resource type="Texture2D" uid="uid://b43hrsa6iabio" path="res://addons/godot_owl/icons/calendar.png" id="2_rkwi0"]
 [ext_resource type="Texture2D" uid="uid://c4awr6hf83cep" path="res://addons/godot_owl/icons/previous.png" id="3_ckv0m"]
 [ext_resource type="Texture2D" uid="uid://c5ft8tu8asa" path="res://addons/godot_owl/icons/next.png" id="4_b3rvs"]

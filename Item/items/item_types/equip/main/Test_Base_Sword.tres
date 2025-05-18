@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EquipDataMain" load_steps=4 format=3 uid="uid://ch1ufjm7mo43e"]
+
+[ext_resource type="Script" uid="uid://cnbrvwm4y7fyu" path="res://item/items/item_types/equip/main/equip_data_main.gd" id="1_oj6vr"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_g2vts"]
+load_path = "res://.godot/imported/Weapons and Equipment.png-4ebfac030092bb7b6000dbfc7f6ee8bd.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e13dp"]
+atlas = SubResource("CompressedTexture2D_g2vts")
+region = Rect2(96, 0, 16, 16)
+
+[resource]
+script = ExtResource("1_oj6vr")
+slot_type = 4
+name = "Iron Sword"
+description = "A sword made from iron.*TEST ITEM*"
+stackable = false
+texture = SubResource("AtlasTexture_e13dp")
+type = "Test"
+rarity = "Test"
