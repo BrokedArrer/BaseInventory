@@ -1,18 +1,23 @@
-[gd_scene load_steps=8 format=3 uid="uid://b1y3qyj80plm1"]
+[gd_scene load_steps=10 format=3 uid="uid://b1y3qyj80plm1"]
 
 [ext_resource type="Texture2D" uid="uid://c11omk4dyrwg7" path="res://art/Character v.2/NewCharAnims/CharIdles.png" id="1_5xxfp"]
 [ext_resource type="Script" uid="uid://cc7d5ptuplmgu" path="res://objects/player/player.gd" id="1_p7fqj"]
 [ext_resource type="Resource" uid="uid://beaevpmksat1j" path="res://inventory/inventory resources/Inventory.tres" id="2_gnkmh"]
 [ext_resource type="Resource" uid="uid://diwfpifv1tj6o" path="res://inventory/inventory resources/Inventory_Data_Equip.tres" id="3_xkryw"]
 [ext_resource type="Resource" uid="uid://c7ofd8bhutpdk" path="res://inventory/inventory resources/Inventory_Data_Hotbar.tres" id="4_ow0dq"]
+[ext_resource type="Texture2D" uid="uid://btf1wgoxpy4tk" path="res://art/Motema/Basic Gui Element/GUI.png" id="6_xkryw"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cr3cu"]
 radius = 3.3
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_g7ett"]
-radius = 16.0312
+[sub_resource type="AtlasTexture" id="AtlasTexture_ow0dq"]
+atlas = ExtResource("6_xkryw")
+region = Rect2(192, 144, 16, 16)
 
-[node name="Player" type="CharacterBody2D" groups=["save"]]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xkryw"]
+size = Vector2(14, 14)
+
+[node name="Player" type="CharacterBody2D" groups=["player", "save"]]
 script = ExtResource("1_p7fqj")
 inventory_data = ExtResource("2_gnkmh")
 equip_inventory_data = ExtResource("3_xkryw")
@@ -22,20 +27,27 @@ hotbar_inventory_data = ExtResource("4_ow0dq")
 position = Vector2(0, -16)
 texture = ExtResource("1_5xxfp")
 vframes = 4
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 position = Vector2(0, -2)
 shape = SubResource("CircleShape2D_cr3cu")
 
-[node name="InteractableArea" type="Area2D" parent="."]
+[node name="InteractionFinder" type="Node2D" parent="."]
+
+[node name="InteractionFinderSprite" type="Sprite2D" parent="InteractionFinder"]
+position = Vector2(18, -7)
+scale = Vector2(0.875, 0.875)
+texture = SubResource("AtlasTexture_ow0dq")
+
+[node name="InteractionArea" type="Area2D" parent="InteractionFinder"]
 collision_layer = 0
 collision_mask = 16
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableArea"]
-position = Vector2(0, -9)
-shape = SubResource("CircleShape2D_g7ett")
-debug_color = Color(0, 0.6, 0, 0)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionFinder/InteractionArea"]
+position = Vector2(18, -7)
+shape = SubResource("RectangleShape2D_xkryw")
 
-[connection signal="body_entered" from="InteractableArea" to="." method="_on_body_entered"]
-[connection signal="body_exited" from="InteractableArea" to="." method="_on_body_exited"]
+[connection signal="body_entered" from="InteractionFinder/InteractionArea" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="InteractionFinder/InteractionArea" to="." method="_on_body_exited"]

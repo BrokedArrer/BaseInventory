@@ -56,10 +56,10 @@ func use_slot_data(index: int) -> void:
 			slots[index] = null
 		
 	print(slot_data.item_data.name)
+	print("using slot at index: ", index)
 	PlayerManager.use_slot_data(slot_data)
-	
 	inventory_updated.emit(self)
-	
+
 func pick_up_slot_data(slot_data: SlotData) -> bool:
 	for index in slots.size():
 		if slots[index] and slots[index].can_fully_merge_with(slot_data):

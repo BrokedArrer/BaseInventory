@@ -1,4 +1,6 @@
-class_name InventoryDataHotbar extends InventoryData
+extends InventoryData
+class_name InventoryDataHotbar
+
 
 func grab_slot_data(index: int) -> SlotData:
 	var slot_data = slots[index]
@@ -33,29 +35,6 @@ func drop_single_slot_data(grabbed_slot_data: SlotData, index: int) -> SlotData:
 
 func _input(_event):
 	pass
-
-func use_slot_data(index: int) -> void:
-	var slot_data = slots[index]
-
-	if not slot_data:
-		return
-
-	# Check if the item data associated with the slot is an instance of ItemDataConsumable, ItemDataTool, or ItemDataWeapon.
-	if slot_data.item_data is ItemDataConsumable:
-		print(slot_data.item_data.name)
-		print("You used the item " + slot_data.item_data.name)
-		# If the item is consumable, decrease its quantity and remove it if necessary
-		slot_data.quantity -= 1
-		if slot_data.quantity < 1:
-			slots[index] = null
-		inventory_updated.emit(self)
-		
-		
-		# Call the use_slot_data function on the PlayerManager with the slot data
-		PlayerManager.use_slot_data(slot_data)
-
-		# Emit the inventory update signal
-		inventory_updated.emit(self)
 
 
 func on_slot_clicked(index: int, button: int):

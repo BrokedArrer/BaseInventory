@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cu0e52s0vy8tu"]
+
+[ext_resource type="Script" uid="uid://bpmknseth5a6n" path="res://components/collectable/collectable.gd" id="1_783gg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_egrb8"]
+radius = 7.0
+
+[node name="Collectable" type="Area2D"]
+script = ExtResource("1_783gg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_egrb8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

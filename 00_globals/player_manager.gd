@@ -10,6 +10,8 @@ var current_tool: int = -1  # -1 means no tool equipped
 var equipment_slots: Array[ItemData] = []  # Tracks items in slots 0-5
 var player: Player = null
 
+
+
 func _ready() -> void:
 	# Initialize equipment slots array
 	equipment_slots.resize(6)
@@ -70,3 +72,7 @@ func is_item_equipped(item_data: ItemData) -> bool:
 
 func get_all_equipped_items() -> Array[ItemData]:
 	return equipment_slots.duplicate()
+
+func get_hotbar_inventory():
+	# Implement this to return your hotbar inventory reference
+	return null

@@ -10,7 +10,7 @@ region = Rect2(32, 64, 16, 16)
 [resource]
 script = ExtResource("1_iho10")
 speed = 2
-slot_type = 5
+slot_type = 7
 name = "Beginner Trinket"
 description = "A beginner's trinket.*TEST ITEM*"
 stackable = false

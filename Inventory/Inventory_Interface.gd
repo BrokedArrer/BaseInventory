@@ -4,6 +4,7 @@ signal drop_slot_data(slot_data: SlotData)
 
 var grabbed_slot_data: SlotData
 var external_inventory_owner 
+var rng = RandomNumberGenerator.new()
 signal force_close
 
 @onready var player_inventory = $PlayerInventory
@@ -73,12 +74,46 @@ func update_grabbed_slot() -> void:
 	else:
 		grabbed_slot.hide()
 
+func randomize_offset(base_position: Vector2) -> Vector2:
+	# Calculate random offset (20-35 pixels)
+	var offset_distance = rng.randf_range(20, 35)
+	var offset_angle = rng.randf_range(0, TAU)
+	var offset = Vector2.RIGHT.rotated(offset_angle) * offset_distance
+	return base_position + offset
+
+
+func drop_held_item(event: InputEventMouseButton) -> void:
+	if not grabbed_slot_data:
+		return
+		
+	if event.is_pressed():
+		var drop_data: SlotData
+		match event.button_index:
+			MOUSE_BUTTON_LEFT:
+				# Drop entire stack
+				drop_data = grabbed_slot_data
+				grabbed_slot_data = null
+			MOUSE_BUTTON_RIGHT:
+				# Drop single item
+				drop_data = grabbed_slot_data.create_single_slot_data()
+				if grabbed_slot_data.quantity <= 0:
+					grabbed_slot_data = null
+		
+		if drop_data:
+			# Create collectable with random offset
+			var collectable = preload("res://components/collectable/collectable.tscn").instantiate()
+			collectable.slot_data = drop_data
+			collectable.global_position = randomize_offset(PlayerManager.player.global_position)
+			get_tree().current_scene.add_child(collectable)
+			
+			update_grabbed_slot()
 
 func _on_gui_input(event):
-	if event is InputEventMouseButton \
+	if event is InputEventMouseButton and grabbed_slot_data:
+		drop_held_item(event)
+	elif event is InputEventMouseButton \
 			and event.is_pressed() \
 			and grabbed_slot_data: 
-				
 		match event.button_index:
 			MOUSE_BUTTON_LEFT:
 				drop_slot_data.emit(grabbed_slot_data)
@@ -87,12 +122,17 @@ func _on_gui_input(event):
 				drop_slot_data.emit(grabbed_slot_data.create_single_slot_data())
 				if grabbed_slot_data.quantity < 1:
 					grabbed_slot_data = null
-			
 		update_grabbed_slot()
 
 
 func _on_visibility_changed():
-	if not visible and grabbed_slot_data: 
+	if not visible and grabbed_slot_data:
+		# Create a collectable with random offset from player position
+		var collectable = preload('res://components/collectable/collectable.tscn').instantiate()
+		collectable.slot_data = grabbed_slot_data
+		collectable.global_position = randomize_offset(PlayerManager.player.global_position)
+		get_tree().current_scene.add_child(collectable)
+		
 		drop_slot_data.emit(grabbed_slot_data)
 		grabbed_slot_data = null
 		update_grabbed_slot()

@@ -1,12 +1,13 @@
-[gd_scene load_steps=10 format=3 uid="uid://cpi0ega0q3ljt"]
+[gd_scene load_steps=11 format=3 uid="uid://cpi0ega0q3ljt"]
 
 [ext_resource type="Script" uid="uid://6iwiccwrws82" path="res://scenes/world.gd" id="1_3t3uk"]
 [ext_resource type="PackedScene" uid="uid://b1y3qyj80plm1" path="res://objects/player/player.tscn" id="2_3m1vt"]
+[ext_resource type="PackedScene" uid="uid://cm0wg7rskiw3v" path="res://tilemaps/TillableGround.tscn" id="2_4mrxx"]
 [ext_resource type="Script" uid="uid://bps2mfkdqmamt" path="res://scenes/Camera2D.gd" id="6_5qkl7"]
 [ext_resource type="Script" uid="uid://tansjf8g2dui" path="res://inventory/Inventory_Data.gd" id="6_h0owe"]
 [ext_resource type="Resource" uid="uid://da4tco3wlk56k" path="res://item/items/item_types/equip/secondary/Test_Base_Shield.tres" id="8_4mrxx"]
 [ext_resource type="Script" uid="uid://dlrvv644hy0wb" path="res://inventory/slot_data.gd" id="8_gbe35"]
-[ext_resource type="PackedScene" uid="uid://n3e4prthg1iu" path="res://objects/interactables/chest.tscn" id="8_jdspc"]
+[ext_resource type="PackedScene" uid="uid://n3e4prthg1iu" path="res://objects/interactables/chest/chest.tscn" id="8_jdspc"]
 
 [sub_resource type="Resource" id="Resource_5s1pt"]
 script = ExtResource("8_gbe35")
@@ -21,13 +22,16 @@ slots = Array[ExtResource("8_gbe35")]([SubResource("Resource_5s1pt"), null, null
 y_sort_enabled = true
 script = ExtResource("1_3t3uk")
 
+[node name="TillableDirt" parent="." instance=ExtResource("2_4mrxx")]
+
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target")]
-zoom = Vector2(3, 3)
+zoom = Vector2(2, 2)
 script = ExtResource("6_5qkl7")
 target = NodePath("../Player")
 
-[node name="Player" parent="." instance=ExtResource("2_3m1vt")]
+[node name="Player" parent="." node_paths=PackedStringArray("tilemap") instance=ExtResource("2_3m1vt")]
 position = Vector2(407, 189)
+tilemap = NodePath("../TillableDirt")
 
 [node name="Chest" parent="." instance=ExtResource("8_jdspc")]
 position = Vector2(352, 199)

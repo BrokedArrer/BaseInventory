@@ -6,10 +6,10 @@
 [sub_resource type="AtlasTexture" id="AtlasTexture_gmsas"]
 atlas = ExtResource("2_mavb1")
 
-[node name="HotBarInventory" type="PanelContainer"]
+[node name="HotBarInventory" type="PanelContainer" groups=["hotbar"]]
 self_modulate = Color(1, 1, 1, 0)
 offset_right = 40.0
-offset_bottom = 40.0
+offset_bottom = 42.0
 scale = Vector2(0.8, 0.8)
 script = ExtResource("1_46a8f")
 
@@ -25,7 +25,7 @@ patch_margin_bottom = 8
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 2
 theme_override_constants/margin_left = 8
-theme_override_constants/margin_top = 8
+theme_override_constants/margin_top = 9
 theme_override_constants/margin_right = 8
 theme_override_constants/margin_bottom = 8
 

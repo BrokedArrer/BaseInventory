@@ -3,6 +3,9 @@ extends PanelContainer
 signal slot_clicked(index: int, button:int)
 @onready var texture_rect = $MarginContainer/TextureRect
 @onready var quantity_label = $QuantityLabel
+@onready var highlight: Panel = $Highlight
+
+
 
 @export_enum("NONE:0", "HEAD:1", "CHEST:2", "LEGS:3", "MAIN:4", "SECONDARY:5", "TOOL:6", "ACCESSORY:7") 
 var slot_type: int = 0
@@ -19,8 +22,17 @@ func set_slot_data(slot_data: SlotData) -> void:
 	else:
 		quantity_label.hide()
 
+func set_highlight(visible: bool) -> void:
+	highlight.visible = visible
+
 func get_slot_type() -> int:
 	return slot_type
+
+func use_slot_data() -> void:
+	# Your existing use slot logic here
+	#PlayerManager.set_active_slot(get_index())
+	pass
+
 
 
 func _on_gui_input(event):

@@ -3,7 +3,7 @@
 [ext_resource type="Theme" uid="uid://d20a5atje1klx" path="res://scenes/FontTheme.tres" id="1_36vus"]
 [ext_resource type="Script" uid="uid://3bbqufsjjlr0" path="res://inventory/Inventory_Interface.gd" id="2_wfl23"]
 [ext_resource type="PackedScene" uid="uid://b67xdldlwm2bt" path="res://inventory/inventory.tscn" id="3_eeax8"]
-[ext_resource type="PackedScene" uid="uid://dynmdwdiofdcu" path="res://inventory/slot.tscn" id="4_jx3xw"]
+[ext_resource type="PackedScene" uid="uid://dynmdwdiofdcu" path="res://inventory/Slot.tscn" id="4_jx3xw"]
 [ext_resource type="PackedScene" uid="uid://deo1wneywolma" path="res://inventory/EquipInventory.tscn" id="5_nq2fr"]
 [ext_resource type="PackedScene" uid="uid://du6cc08g3563q" path="res://inventory/ExternalInventory.tscn" id="6_015ts"]
 [ext_resource type="PackedScene" uid="uid://bhypapm7127mv" path="res://inventory/hotbarinventory.tscn" id="7_akc5h"]
@@ -18,6 +18,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 1
+mouse_force_pass_scroll_events = false
 theme = ExtResource("1_36vus")
 script = ExtResource("2_wfl23")
 
@@ -71,6 +73,7 @@ grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 4
 size_flags_vertical = 8
+mouse_force_pass_scroll_events = false
 theme = ExtResource("1_36vus")
 
 [connection signal="gui_input" from="InventoryInterface" to="InventoryInterface" method="_on_gui_input"]
