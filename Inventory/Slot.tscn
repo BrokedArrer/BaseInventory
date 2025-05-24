@@ -55,6 +55,7 @@ text = "x99"
 [node name="Highlight" type="Panel" parent="."]
 visible = false
 layout_mode = 2
+mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_x8auj")
 
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
